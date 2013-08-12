@@ -20,7 +20,7 @@ It should take a few seconds to load.  If you look at the last line of your serv
 
 ### Make it fast!
 
-Your goal is to get the index page to load in under **200ms**.  Yes, that's milliseconds.  You're permitted to do the following:
+Your goal is to get the index page *server response time* to under **200ms**.  Yes, that's milliseconds.  You're permitted to do the following:
 
 1. Add new fields to the `users` and `karma_points` tables
 2. Add new indexes to the `users` and `karma_points` tables
