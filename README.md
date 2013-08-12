@@ -28,6 +28,8 @@ Your goal is to get the index page to load in under **200ms**.  Yes, that's mill
 
 The test suite should remain green.  If you add any new public methods make sure you add appropriate corresponding tests.
 
+You **should write a custom rake tasks** to handle populating new database tables.
+
 You **should not** change the controller or view code.
 
 **Submit your solution as a pull request**.
