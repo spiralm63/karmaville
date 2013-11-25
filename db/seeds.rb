@@ -37,3 +37,5 @@ TOTAL_KARMA.times.each_slice(SLICE_SIZE).each_with_index do |ids, index|
   puts "Inserted #{(index + 1)*SLICE_SIZE} of #{TOTAL_KARMA} karma points..."
   KarmaPoint.import(fields, data, :validate => false, :timestamps => false)
 end
+
+User.all.each { |user| user.update_karma }
