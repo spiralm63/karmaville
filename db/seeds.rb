@@ -38,4 +38,4 @@ TOTAL_KARMA.times.each_slice(SLICE_SIZE).each_with_index do |ids, index|
   KarmaPoint.import(fields, data, :validate => false, :timestamps => false)
 end
 
-User.all.each { |user| user.update_karma }
+# User.all.each { |user| user.update_karma }

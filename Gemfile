@@ -8,6 +8,11 @@ gem 'bcrypt-ruby'
 gem 'pg'
 gem 'jquery-rails'
 
+gem 'memcache-client'
+
+# gem 'actionpack-page_caching'
+# gem 'actionpack-action_caching'
+
 group :development do
   gem 'quiet_assets'
   gem 'activerecord-import'

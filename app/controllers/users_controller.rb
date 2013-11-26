@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   def index
-    @users = User.by_karma.limit(50)
+    @users = Rails.cache.fetch("users", :expires_in => 30.seconds) do
+      User.by_karma.limit(50).all
+    end
   end
 end
